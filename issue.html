@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MikeTECH Issue Tracker</title>
+    <link rel="stylesheet" href="issue.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>MikeTECH Issue Tracker</h1>
+        <div class="mainbox">
+
+            <h3>Add New Issue:</h3>
+            <form action="IssueInputForm">
+                <label for="IssueDescriptionInput">Description</label>
+                <p>
+                    <input type="text" class="form-control" id="Description" placeholder="Describe the issue...">
+                </p>
+                <label for="">Severity</label>
+                <p>
+                    <select name="IssueSeverityInput" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </p>
+                <label for="IssueAssignedToInput">Assigned To</label>
+                <p>
+                    <input type="text" class="form-control" id="AssignedTo" placeholder="Enter responsible...">
+                </p>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+            <div class="col-lg-12">
+                <div id="IssueList"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy MikeTECH Computers</p>
+    </div>
+
+
+    
+    <script src="issue.js"></script>
+
+</body>
+
+</html>
